@@ -3227,13 +3227,7 @@ export default {
     const trigger = ref(null);
     const sidebar = ref(null);
 
-    const storedSidebarExpanded = null;
-    // if (process.client) {
-    //   storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
-    // }
-
-    // let storedSidebarExpanded;
-
+    let storedSidebarExpanded = true;
     // onUnmounted(() => {
     //   storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
     // });
@@ -3273,14 +3267,14 @@ export default {
       document.removeEventListener("keydown", keyHandler);
     });
 
-    // watch(sidebarExpanded, () => {
-    //   localStorage.setItem("sidebar-expanded", sidebarExpanded.value);
-    //   if (sidebarExpanded.value) {
-    //     document.querySelector("body").classList.add("sidebar-expanded");
-    //   } else {
-    //     document.querySelector("body").classList.remove("sidebar-expanded");
-    //   }
-    // });
+    watch(sidebarExpanded, () => {
+      // localStorage.setItem("sidebar-expanded", sidebarExpanded.value);
+      if (sidebarExpanded.value) {
+        document.querySelector("body").classList.add("sidebar-expanded");
+      } else {
+        document.querySelector("body").classList.remove("sidebar-expanded");
+      }
+    });
 
     return {
       trigger,
@@ -3291,3 +3285,15 @@ export default {
   },
 };
 </script>
+
+//  let storedSidebarExpanded;
+
+//     if (typeof window !== "undefined") {
+//       // Perform localStorage action
+//       storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
+//     }
+//     if (localStorage.getItem("sidebar-expanded")) {
+//       storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
+//     }
+
+//     let storedSidebarExpanded;
