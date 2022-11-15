@@ -1,17 +1,11 @@
 <template>
   <div class="flex h-screen overflow-hidden">
-    <!-- Sidebar -->
-    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
-
     <!-- Content area -->
     <div
       class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden"
     >
       <!-- Site header -->
-      <Header
-        :sidebarOpen="sidebarOpen"
-        @toggle-sidebar="sidebarOpen = !sidebarOpen"
-      />
+      <Header />
 
       <main>
         <div class="relative flex">
@@ -34,7 +28,7 @@
 
 <script>
 import { ref } from "vue";
-import Sidebar from "../partials/Sidebar.vue";
+
 import Header from "../partials/Header.vue";
 import InboxSidebar from "../partials/inbox/InboxSidebar.vue";
 import InboxBody from "../partials/inbox/InboxBody.vue";
@@ -42,7 +36,6 @@ import InboxBody from "../partials/inbox/InboxBody.vue";
 export default {
   name: "Inbox",
   components: {
-    Sidebar,
     Header,
     InboxSidebar,
     InboxBody,

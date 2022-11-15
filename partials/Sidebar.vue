@@ -3227,7 +3227,17 @@ export default {
     const trigger = ref(null);
     const sidebar = ref(null);
 
-    const storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
+    const storedSidebarExpanded = null;
+    // if (process.client) {
+    //   storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
+    // }
+
+    // let storedSidebarExpanded;
+
+    // onUnmounted(() => {
+    //   storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
+    // });
+
     const sidebarExpanded = ref(
       storedSidebarExpanded === null ? false : storedSidebarExpanded === "true"
     );
@@ -3263,14 +3273,14 @@ export default {
       document.removeEventListener("keydown", keyHandler);
     });
 
-    watch(sidebarExpanded, () => {
-      localStorage.setItem("sidebar-expanded", sidebarExpanded.value);
-      if (sidebarExpanded.value) {
-        document.querySelector("body").classList.add("sidebar-expanded");
-      } else {
-        document.querySelector("body").classList.remove("sidebar-expanded");
-      }
-    });
+    // watch(sidebarExpanded, () => {
+    //   localStorage.setItem("sidebar-expanded", sidebarExpanded.value);
+    //   if (sidebarExpanded.value) {
+    //     document.querySelector("body").classList.add("sidebar-expanded");
+    //   } else {
+    //     document.querySelector("body").classList.remove("sidebar-expanded");
+    //   }
+    // });
 
     return {
       trigger,
