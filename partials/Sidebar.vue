@@ -3227,16 +3227,18 @@ export default {
     const trigger = ref(null);
     const sidebar = ref(null);
 
+    // const storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
+
     let storedSidebarExpanded = true;
-    // onUnmounted(() => {
-    //   storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
-    // });
+    onMounted(() => {
+      storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
+    });
 
     const sidebarExpanded = ref(
       storedSidebarExpanded === null ? false : storedSidebarExpanded === "true"
     );
 
-    const router = useRouter(); // This is how we use the userouter function in Nuxt
+    // const router = useRouter(); // This is how we use the userouter function in Nuxt
     const currentRoute = router.currentRoute.value;
 
     // close on click outside
@@ -3268,7 +3270,7 @@ export default {
     });
 
     watch(sidebarExpanded, () => {
-      // localStorage.setItem("sidebar-expanded", sidebarExpanded.value);
+      localStorage.setItem("sidebar-expanded", sidebarExpanded.value);
       if (sidebarExpanded.value) {
         document.querySelector("body").classList.add("sidebar-expanded");
       } else {
