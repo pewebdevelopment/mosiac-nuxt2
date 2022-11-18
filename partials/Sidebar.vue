@@ -3223,11 +3223,24 @@ export default {
   components: {
     SidebarLinkGroup,
   },
+
+  data() {
+    return {
+      currentRoute,
+    };
+  },
+
+  created() {
+    console.log(this.$route.path);
+    currentRoute = this.$route.path;
+  },
+
+  //const router = useRouter(); // This is how we use the userouter function in Nuxt
+  // const currentRoute = router.currentRoute.value;
+
   setup(props, { emit }) {
     const trigger = ref(null);
     const sidebar = ref(null);
-
-    // const storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
 
     let storedSidebarExpanded = true;
     onMounted(() => {
@@ -3237,9 +3250,6 @@ export default {
     const sidebarExpanded = ref(
       storedSidebarExpanded === null ? false : storedSidebarExpanded === "true"
     );
-
-    // const router = useRouter(); // This is how we use the userouter function in Nuxt
-    const currentRoute = router.currentRoute.value;
 
     // close on click outside
     const clickHandler = ({ target }) => {
@@ -3282,7 +3292,6 @@ export default {
       trigger,
       sidebar,
       sidebarExpanded,
-      currentRoute,
     };
   },
 };
