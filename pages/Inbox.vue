@@ -16,10 +16,10 @@
       <main>
         <div class="relative flex">
           <!-- Inbox sidebar -->
-          <InboxSidebar
+          <!-- <InboxSidebar
             :inboxSidebarOpen="inboxSidebarOpen"
             @close-inboxsidebar="inboxSidebarOpen = false"
-          />
+          /> -->
 
           <!-- Inbox body -->
           <InboxBody
@@ -34,7 +34,7 @@
 
 <script>
 import { ref } from "vue";
-import Sidebar from "../partials/Sidebar.vue";
+import Sidebar from "../partials/SidebarNuxt.vue";
 import Header from "../partials/Header.vue";
 import InboxSidebar from "../partials/inbox/InboxSidebar.vue";
 import InboxBody from "../partials/inbox/InboxBody.vue";
