@@ -159,9 +159,11 @@
                     <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                       <path
                         class="fill-current text-slate-400"
-                        :class="$route.fullPath === '/' ||
-                      $route.fullPath.includes('dashboard')) &&
-                      '!text-indigo-500' "
+                        :class="
+                          ($route.fullPath === '/' ||
+                            $route.fullPath.includes('dashboard')) &&
+                          '!text-indigo-500'
+                        "
                         d="M12 0C5.383 0 0 5.383 0 12s5.383
                       12 12 12 12-5.383 12-12S18.617 0 12 0z"
                       />
