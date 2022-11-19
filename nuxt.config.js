@@ -38,7 +38,7 @@ export default defineNuxtConfig ({
     //postCSS8 for TailwindCSS
      '@nuxt/postcss8',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+     '@nuxtjs/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
