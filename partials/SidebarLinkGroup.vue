@@ -3,7 +3,7 @@
     class="px-3 py-2 rounded-sm mb-0.5 last:mb-0"
     :class="activeCondition && 'bg-slate-900'"
   >
-    <slot :handleClick="handleClick" :expanded="expanded" />
+    <slot name="parentLink" :handleClick="handleClick" :expanded="expanded" />
   </li>
 </template>
 

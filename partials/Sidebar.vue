@@ -16,7 +16,8 @@
     ></div>
 
     <!-- Sidebar -->
-    <div v-if="currentRoute && currentRoute.fullPath"
+    <div
+      v-if="currentRoute && currentRoute.fullPath"
       id="sidebar"
       ref="sidebar"
       class="
