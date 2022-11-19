@@ -40,7 +40,7 @@
           </div>
 
           <!-- Cards -->
-          <div class="grid grid-cols-12 gap-6">
+          <div class="grid grid-cols-1 gap-6">
             <!-- Line chart (Analytics) -->
             <AnalyticsCard01 />
             <!--  Line chart (Active Users Right Now) -->

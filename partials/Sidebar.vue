@@ -16,7 +16,7 @@
     ></div>
 
     <!-- Sidebar -->
-    <div
+    <div v-if="currentRoute && currentRoute.fullPath"
       id="sidebar"
       ref="sidebar"
       class="
@@ -125,7 +125,7 @@
               >Pages</span
             >
           </h3>
-          <ul class="mt-3">
+          <ul class="mt-3" v-if="currentRoute && currentRoute.fullPath">
             <!-- Dashboard -->
             <SidebarLinkGroup
               v-slot="parentLink"
@@ -2361,7 +2361,7 @@
               >More</span
             >
           </h3>
-          <ul class="mt-3">
+          <ul class="mt-3" v-if="currentRoute && currentRoute.fullPath">
             <!-- Authentication -->
             <SidebarLinkGroup v-slot="parentLink">
               <a
@@ -3305,14 +3305,8 @@ export default {
 };
 </script>
 
-//  let storedSidebarExpanded;
-
-//     if (typeof window !== "undefined") {
-//       // Perform localStorage action
-//       storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
-//     }
-//     if (localStorage.getItem("sidebar-expanded")) {
-//       storedSidebarExpanded = localStorage.getItem("sidebar-expanded");
-//     }
-
-//     let storedSidebarExpanded;
+// let storedSidebarExpanded; // if (typeof window !== "undefined") { // //
+Perform localStorage action // storedSidebarExpanded =
+localStorage.getItem("sidebar-expanded"); // } // if
+(localStorage.getItem("sidebar-expanded")) { // storedSidebarExpanded =
+localStorage.getItem("sidebar-expanded"); // } // let storedSidebarExpanded;
