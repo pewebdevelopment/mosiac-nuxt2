@@ -790,7 +790,7 @@
               <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
-                    to="/community/users-tabs"
+                    to="/community/userstabs"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -822,7 +822,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/community/users-tiles"
+                    to="/community/userstiles"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -950,7 +950,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/community/forum-post"
+                    to="/community/forumpost"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -1014,7 +1014,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/community/meetups-post"
+                    to="/community/meetupspost"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
