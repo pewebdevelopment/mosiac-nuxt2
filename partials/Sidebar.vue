@@ -296,7 +296,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -410,7 +410,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -442,7 +442,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -474,7 +474,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -506,7 +506,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -538,7 +538,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -570,7 +570,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -602,7 +602,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -634,7 +634,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -666,7 +666,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -698,7 +698,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -804,7 +804,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -836,7 +836,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -868,7 +868,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -900,7 +900,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -932,7 +932,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -964,7 +964,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -996,7 +996,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1028,7 +1028,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1088,7 +1088,7 @@
                         class="fill-current text-slate-700"
                         :class="
                           currentRoute.fullPath.includes('finance') &&
-                          '!text-indigo-500'
+                          'text-indigo-500'
                         "
                         d="M18.007 13c-.474 2.833-2.919 5-5.864 5a5.888 5.888 0 0 1-3.694-1.304L4 20.731C6.131 22.752 8.992 24 12.143 24c6.232 0 11.35-4.851 11.857-11h-5.993Z"
                       />
@@ -1142,7 +1142,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1174,7 +1174,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1206,7 +1206,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1266,7 +1266,7 @@
                         class="fill-current text-slate-600"
                         :class="
                           currentRoute.fullPath.includes('job') &&
-                          '!text-indigo-500'
+                          'text-indigo-500'
                         "
                         d="M10.034 13.997a11.011 11.011 0 0 1-2.551-3.862L4.595 13.02a2.513 2.513 0 0 0-.4 2.645 6.668 6.668 0 0 0 1.64 2.532 5.525 5.525 0 0 0 3.643 1.824 2.1 2.1 0 0 0 1.534-.587l2.883-2.882a11.156 11.156 0 0 1-3.861-2.556Z"
                       />
@@ -1320,7 +1320,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1352,7 +1352,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1384,7 +1384,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1498,7 +1498,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1530,7 +1530,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1876,7 +1876,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1908,7 +1908,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1940,7 +1940,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -1972,7 +1972,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2004,7 +2004,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2036,7 +2036,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2166,7 +2166,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2198,7 +2198,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2230,7 +2230,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2262,7 +2262,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2294,7 +2294,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2326,7 +2326,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2786,7 +2786,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2818,7 +2818,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2850,7 +2850,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2882,7 +2882,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2914,7 +2914,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2946,7 +2946,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -2978,7 +2978,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -3010,7 +3010,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -3042,7 +3042,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -3074,7 +3074,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -3106,7 +3106,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -3138,7 +3138,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -3170,7 +3170,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
