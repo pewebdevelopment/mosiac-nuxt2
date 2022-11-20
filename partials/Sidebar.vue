@@ -23,7 +23,7 @@
       class="
         flex flex-col
         absolute
-        z-40
+        z-50
         left-0
         top-0
         lg:static lg:left-auto lg:top-auto lg:translate-x-0
