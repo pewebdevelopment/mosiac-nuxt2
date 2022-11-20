@@ -164,7 +164,7 @@
                         :class="
                           (currentRoute.fullPath === '/' ||
                             currentRoute.fullPath.includes('dashboard')) &&
-                          '!text-indigo-500'
+                          'text-indigo-500'
                         "
                         d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0z"
                       />
@@ -231,7 +231,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -263,7 +263,7 @@
                           duration-150
                           truncate
                         "
-                        :class="isExactActive && '!text-indigo-500'"
+                        :class="isExactActive && 'text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
