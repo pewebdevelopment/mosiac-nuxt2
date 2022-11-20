@@ -1128,7 +1128,7 @@
               <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
-                    to="/finance/cards"
+                    to="/finance/CreditCards"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -1306,7 +1306,7 @@
               <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
-                    to="/job/job-listing"
+                    to="/job/JobListing"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -1338,7 +1338,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/job/job-post"
+                    to="/job/JobPost"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -1370,7 +1370,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/job/company-profile"
+                    to="/job/CompanyProfile"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -1484,7 +1484,7 @@
               <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
-                    to="/tasks/kanban"
+                    to="/tasks/TasksKanban"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -1516,7 +1516,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/tasks/list"
+                    to="/tasks/TasksList"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -1862,7 +1862,7 @@
               <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
-                    to="/settings/account"
+                    to="/settings/Account"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
