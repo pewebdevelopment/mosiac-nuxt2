@@ -1,7 +1,11 @@
 <template>
   <div class="flex h-screen overflow-hidden">
     <!-- Sidebar -->
-    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
+    <Sidebar
+      :sidebarOpen="sidebarOpen"
+      @close-sidebar="sidebarOpen = false"
+      class="z-50"
+    />
 
     <!-- Content area -->
     <div
@@ -11,15 +15,16 @@
       <Header
         :sidebarOpen="sidebarOpen"
         @toggle-sidebar="sidebarOpen = !sidebarOpen"
+        class="z-40"
       />
 
       <main>
         <div class="relative flex">
           <!-- Inbox sidebar -->
-          <!-- <InboxSidebar
+          <InboxSidebar
             :inboxSidebarOpen="inboxSidebarOpen"
             @close-inboxsidebar="inboxSidebarOpen = false"
-          /> -->
+          />
 
           <!-- Inbox body -->
           <InboxBody
