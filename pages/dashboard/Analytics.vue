@@ -2,6 +2,54 @@
   <div class="flex h-screen overflow-hidden">
     <!-- Sidebar -->
     <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
+  </div>
+</template>
+
+<script>
+import { ref } from "vue";
+import Sidebar from "../../partials/Sidebar.vue";
+import Header from "../../partials/Header.vue";
+import Datepicker from "@/components/Datepicker.vue";
+import AnalyticsCard01 from "../../partials/analytics/AnalyticsCard01.vue";
+import AnalyticsCard02 from "../../partials/analytics/AnalyticsCard02.vue";
+import AnalyticsCard03 from "../../partials/analytics/AnalyticsCard03.vue";
+import AnalyticsCard04 from "../../partials/analytics/AnalyticsCard04.vue";
+import AnalyticsCard05 from "../../partials/analytics/AnalyticsCard05.vue";
+import AnalyticsCard06 from "../../partials/analytics/AnalyticsCard06.vue";
+import AnalyticsCard07 from "../../partials/analytics/AnalyticsCard07.vue";
+import AnalyticsCard08 from "../../partials/analytics/AnalyticsCard08.vue";
+import AnalyticsCard09 from "../../partials/analytics/AnalyticsCard09.vue";
+import AnalyticsCard10 from "../../partials/analytics/AnalyticsCard10.vue";
+import AnalyticsCard11 from "../../partials/analytics/AnalyticsCard11.vue";
+
+export default {
+  name: "Analytics",
+  components: {
+    Sidebar,
+    Header,
+    Datepicker,
+    AnalyticsCard01,
+    AnalyticsCard02,
+    AnalyticsCard03,
+    AnalyticsCard04,
+    AnalyticsCard05,
+    AnalyticsCard06,
+    AnalyticsCard07,
+    AnalyticsCard08,
+    AnalyticsCard09,
+    AnalyticsCard10,
+    AnalyticsCard11,
+  },
+  setup() {
+    const sidebarOpen = ref(false);
+
+    return {
+      sidebarOpen,
+    };
+  },
+};
+</script>
+
 
     <!-- Content area -->
     <div
@@ -67,50 +115,3 @@
         </div>
       </main>
     </div>
-  </div>
-</template>
-
-<script>
-import { ref } from "vue";
-import Sidebar from "../partials/Sidebar.vue";
-import Header from "../partials/Header.vue";
-import Datepicker from "@/components/Datepicker.vue";
-import AnalyticsCard01 from "../partials/analytics/AnalyticsCard01.vue";
-import AnalyticsCard02 from "../partials/analytics/AnalyticsCard02.vue";
-import AnalyticsCard03 from "../partials/analytics/AnalyticsCard03.vue";
-import AnalyticsCard04 from "../partials/analytics/AnalyticsCard04.vue";
-import AnalyticsCard05 from "../partials/analytics/AnalyticsCard05.vue";
-import AnalyticsCard06 from "../partials/analytics/AnalyticsCard06.vue";
-import AnalyticsCard07 from "../partials/analytics/AnalyticsCard07.vue";
-import AnalyticsCard08 from "../partials/analytics/AnalyticsCard08.vue";
-import AnalyticsCard09 from "../partials/analytics/AnalyticsCard09.vue";
-import AnalyticsCard10 from "../partials/analytics/AnalyticsCard10.vue";
-import AnalyticsCard11 from "../partials/analytics/AnalyticsCard11.vue";
-
-export default {
-  name: "Analytics",
-  components: {
-    Sidebar,
-    Header,
-    Datepicker,
-    AnalyticsCard01,
-    AnalyticsCard02,
-    AnalyticsCard03,
-    AnalyticsCard04,
-    AnalyticsCard05,
-    AnalyticsCard06,
-    AnalyticsCard07,
-    AnalyticsCard08,
-    AnalyticsCard09,
-    AnalyticsCard10,
-    AnalyticsCard11,
-  },
-  setup() {
-    const sidebarOpen = ref(false);
-
-    return {
-      sidebarOpen,
-    };
-  },
-};
-</script>

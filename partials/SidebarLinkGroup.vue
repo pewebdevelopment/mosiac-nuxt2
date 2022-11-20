@@ -3,7 +3,9 @@
     class="px-3 py-2 rounded-sm mb-0.5 last:mb-0"
     :class="activeCondition && 'bg-slate-900'"
   >
-    <slot name="parentLink" :handleClick="handleClick" :expanded="expanded" />
+    <!-- <slot name="parentLink"></slot> -->
+    <slot :handleClick="handleClick" :expanded="expanded" />
+    <!-- // advanced syntax for slots -->
   </li>
 </template>
 
@@ -18,6 +20,8 @@ export default {
 
     const handleClick = () => {
       expanded.value = !expanded.value;
+
+      console.log("In SideBarlinkgroup via handleclick", expanded.value);
     };
 
     return {
