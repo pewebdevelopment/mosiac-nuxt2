@@ -1192,7 +1192,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/finance/transaction-details"
+                    to="/finance/TransactionDetails"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2248,7 +2248,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/utility/empty-state"
+                    to="/utility/EmptyState"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2280,7 +2280,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/utility/404"
+                    to="/utility/PageNotFound"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2312,7 +2312,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/utility/knowledge-base"
+                    to="/utility/KnowledgeBase"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2479,7 +2479,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/reset-password"
+                    to="/resetpassword"
                     custom
                     v-slot="{ href, navigate }"
                   >
@@ -2570,7 +2570,7 @@
               <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
-                    to="/onboarding-01"
+                    to="/Onboarding01"
                     custom
                     v-slot="{ href, navigate }"
                   >
@@ -2601,7 +2601,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/onboarding-02"
+                    to="/Onboarding02"
                     custom
                     v-slot="{ href, navigate }"
                   >
@@ -2632,7 +2632,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/onboarding-03"
+                    to="/Onboarding03"
                     custom
                     v-slot="{ href, navigate }"
                   >
@@ -2663,7 +2663,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/onboarding-04"
+                    to="/Onboarding04"
                     custom
                     v-slot="{ href, navigate }"
                   >
@@ -2772,7 +2772,7 @@
               <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
-                    to="/component/button"
+                    to="/component/ButtonPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2804,7 +2804,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/form"
+                    to="/component/FormPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2836,7 +2836,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/dropdown"
+                    to="/component/DropdownPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2868,7 +2868,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/alert"
+                    to="/component/AlertPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2900,7 +2900,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/modal"
+                    to="/component/ModalPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2932,7 +2932,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/pagination"
+                    to="/component/PaginationPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2964,7 +2964,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/tabs"
+                    to="/component/TabsPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -2996,7 +2996,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/breadcrumb"
+                    to="/component/BreadcrumbPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -3028,7 +3028,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/badge"
+                    to="/component/BadgePage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -3060,7 +3060,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/avatar"
+                    to="/component/AvatarPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -3092,7 +3092,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/tooltip"
+                    to="/component/TooltipPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -3124,7 +3124,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/accordion"
+                    to="/component/AccordionPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -3156,7 +3156,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/component/icons"
+                    to="/component/IconsPage"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >

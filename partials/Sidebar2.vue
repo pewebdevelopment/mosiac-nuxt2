@@ -2359,7 +2359,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/reset-password"
+                    to="/resetpassword"
                     custom
                     v-slot="{ href, navigate }"
                   >
