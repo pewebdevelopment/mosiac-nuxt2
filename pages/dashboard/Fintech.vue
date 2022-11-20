@@ -90,24 +90,24 @@
 
 <script>
 import { ref } from "vue";
-import Sidebar from "../partials/Sidebar.vue";
-import Header from "../partials/Header.vue";
+import Sidebar from "../../partials/Sidebar.vue";
+import Header from "../../partials/Header.vue";
 import Datepicker from "@/components/Datepicker.vue";
-import FintechIntro from "../partials/fintech/FintechIntro.vue";
-import FintechCard01 from "../partials/fintech/FintechCard01.vue";
-import FintechCard02 from "../partials/fintech/FintechCard02.vue";
-import FintechCard03 from "../partials/fintech/FintechCard03.vue";
-import FintechCard04 from "../partials/fintech/FintechCard04.vue";
-import FintechCard05 from "../partials/fintech/FintechCard05.vue";
-import FintechCard06 from "../partials/fintech/FintechCard06.vue";
-import FintechCard07 from "../partials/fintech/FintechCard07.vue";
-import FintechCard08 from "../partials/fintech/FintechCard08.vue";
-import FintechCard09 from "../partials/fintech/FintechCard09.vue";
-import FintechCard10 from "../partials/fintech/FintechCard10.vue";
-import FintechCard11 from "../partials/fintech/FintechCard11.vue";
-import FintechCard12 from "../partials/fintech/FintechCard12.vue";
-import FintechCard13 from "../partials/fintech/FintechCard13.vue";
-import FintechCard14 from "../partials/fintech/FintechCard14.vue";
+import FintechIntro from "../../partials/fintech/FintechIntro.vue";
+import FintechCard01 from "../../partials/fintech/FintechCard01.vue";
+import FintechCard02 from "../../partials/fintech/FintechCard02.vue";
+import FintechCard03 from "../../partials/fintech/FintechCard03.vue";
+import FintechCard04 from "../../partials/fintech/FintechCard04.vue";
+import FintechCard05 from "../../partials/fintech/FintechCard05.vue";
+import FintechCard06 from "../../partials/fintech/FintechCard06.vue";
+import FintechCard07 from "../../partials/fintech/FintechCard07.vue";
+import FintechCard08 from "../../partials/fintech/FintechCard08.vue";
+import FintechCard09 from "../../partials/fintech/FintechCard09.vue";
+import FintechCard10 from "../../partials/fintech/FintechCard10.vue";
+import FintechCard11 from "../../partials/fintech/FintechCard11.vue";
+import FintechCard12 from "../../partials/fintech/FintechCard12.vue";
+import FintechCard13 from "../../partials/fintech/FintechCard13.vue";
+import FintechCard14 from "../../partials/fintech/FintechCard14.vue";
 
 export default {
   name: "Dashboard",
