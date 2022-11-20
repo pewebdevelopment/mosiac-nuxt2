@@ -46,13 +46,13 @@
           <tbody
             class="text-sm divide-y divide-slate-200 border-b border-slate-200"
           >
-            <TransactionItem
+            <!-- <TransactionItem
               v-for="transaction in transactions"
               :key="transaction.id"
               :transaction="transaction"
               v-model="selected"
               :value="transaction.id"
-            />
+            /> -->
           </tbody>
         </table>
       </div>
