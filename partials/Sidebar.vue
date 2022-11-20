@@ -27,7 +27,8 @@
         left-0
         top-0
         lg:static lg:left-auto lg:top-auto lg:translate-x-0
-        h-screen
+        min-h-screen
+        h-fit
         overflow-y-scroll
         lg:overflow-y-auto
         no-scrollbar
