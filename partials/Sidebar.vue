@@ -524,7 +524,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/ecommerce/shop-2"
+                    to="/ecommerce/shop2"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -620,7 +620,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/ecommerce/cart-2"
+                    to="/ecommerce/cart2"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
@@ -652,7 +652,7 @@
                     </li>
                   </nuxt-link>
                   <nuxt-link
-                    to="/ecommerce/cart-3"
+                    to="/ecommerce/cart3"
                     custom
                     v-slot="{ href, navigate, isExactActive }"
                   >
