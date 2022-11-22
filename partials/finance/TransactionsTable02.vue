@@ -50,7 +50,7 @@
               v-for="transaction in transactions"
               :key="transaction.id"
               :transaction="transaction"
-              v-model="selected"
+              :selected="selected"
               :value="transaction.id"
               @click.stop="$emit('open-transactionpanel')"
             />

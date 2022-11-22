@@ -73,7 +73,7 @@ export default {
 
     function check() {
       let updatedSelected = [...props.selected];
-      if (this.checked) {
+      if (checked) {
         updatedSelected.splice(updatedSelected.indexOf(props.value), 1);
       } else {
         updatedSelected.push(props.value);
