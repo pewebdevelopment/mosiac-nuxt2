@@ -8,7 +8,7 @@
 
 <script>
 import { ref } from "vue";
-import Sidebar from "../partials/SidebarNuxt.vue";
+import Sidebar from "../partials/Sidebar.vue";
 import Header from "../partials/Header.vue";
 // import { useRouter } from "vue-router";
 
@@ -20,5 +20,8 @@ export default {
   },
 };
 </script>
+
+
+// The following code may work in Nuxt 3 but not in Nuxt 2
 // const currentRoute = useRouter().currentRoute.value;
 // console.log(currentRoute);
