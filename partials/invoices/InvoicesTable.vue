@@ -66,7 +66,7 @@
               v-for="invoice in invoices"
               :key="invoice.id"
               :invoice="invoice"
-              v-model="selected"
+              :selected="selected"
               :value="invoice.id"
             />
           </tbody>

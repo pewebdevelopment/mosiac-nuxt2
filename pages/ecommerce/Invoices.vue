@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-screen overflow-hidden">
     <!-- Sidebar -->
-    <!-- <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" /> -->
+    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
 
     <!-- Content area -->
     <div
@@ -174,7 +174,7 @@
           </div>
         </div>
         <!-- Table -->
-        <!-- <InvoicesTable @change-selection="updateSelectedItems($event)" /> -->
+        <InvoicesTable @change-selection="updateSelectedItems($event)" />
 
         <!-- Pagination -->
         <div class="mt-8">
