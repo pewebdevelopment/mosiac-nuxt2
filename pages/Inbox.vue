@@ -1,11 +1,7 @@
 <template>
   <div class="flex h-screen overflow-hidden">
     <!-- Sidebar -->
-    <Sidebar
-      :sidebarOpen="sidebarOpen"
-      @close-sidebar="sidebarOpen = false"
-      class="z-50"
-    />
+    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
 
     <!-- Content area -->
     <div
@@ -39,7 +35,7 @@
 
 <script>
 import { ref } from "vue";
-import Sidebar from "../partials/SidebarNuxt.vue";
+import Sidebar from "../partials/Sidebar.vue";
 import Header from "../partials/Header.vue";
 import InboxSidebar from "../partials/inbox/InboxSidebar.vue";
 import InboxBody from "../partials/inbox/InboxBody.vue";
