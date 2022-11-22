@@ -4,15 +4,28 @@
       <div class="flex items-center">
         <label class="inline-flex">
           <span class="sr-only">Select</span>
-          <input :id="customer.id" class="form-checkbox" type="checkbox" :value="value" @change="check" :checked="checked" />
+          <input
+            :id="customer.id"
+            class="form-checkbox"
+            type="checkbox"
+            :value="value"
+            @change="check"
+            :checked="checked"
+          />
         </label>
       </div>
     </td>
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
       <div class="flex items-center relative">
         <button>
-          <svg class="w-4 h-4 shrink-0 fill-current" :class="customer.fav ? 'text-amber-500' : 'text-slate-300'" viewBox="0 0 16 16">
-            <path d="M8 0L6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934h-6L8 0z" />
+          <svg
+            class="w-4 h-4 shrink-0 fill-current"
+            :class="customer.fav ? 'text-amber-500' : 'text-slate-300'"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0L6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934h-6L8 0z"
+            />
           </svg>
         </button>
       </div>
@@ -20,28 +33,38 @@
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
       <div class="flex items-center">
         <div class="w-10 h-10 shrink-0 mr-2 sm:mr-3">
-          <img class="rounded-full" :src="customer.image" width="40" height="40" :alt="customer.name" />
+          <img
+            class="rounded-full"
+            :src="customer.image"
+            width="40"
+            height="40"
+            :alt="customer.name"
+          />
         </div>
-        <div class="font-medium text-slate-800">{{customer.name}}</div>
+        <div class="font-medium text-slate-800">{{ customer.name }}</div>
       </div>
     </td>
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-      <div class="text-left">{{customer.email}}</div>
+      <div class="text-left">{{ customer.email }}</div>
     </td>
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-      <div class="text-left">{{customer.location}}</div>
+      <div class="text-left">{{ customer.location }}</div>
     </td>
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-      <div class="text-center">{{customer.orders}}</div>
+      <div class="text-center">{{ customer.orders }}</div>
     </td>
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-      <div class="text-left font-medium text-sky-500">{{customer.lastOrder}}</div>
+      <div class="text-left font-medium text-sky-500">
+        {{ customer.lastOrder }}
+      </div>
     </td>
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-      <div class="text-left font-medium text-emerald-500">{{customer.spent}}</div>
+      <div class="text-left font-medium text-emerald-500">
+        {{ customer.spent }}
+      </div>
     </td>
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-      <div class="text-center">{{customer.refunds}}</div>
+      <div class="text-center">{{ customer.refunds }}</div>
     </td>
     <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
       <!-- Menu button -->
@@ -54,32 +77,32 @@
         </svg>
       </button>
     </td>
-  </tr>  
+  </tr>
 </template>
 
 <script>
-import { computed } from 'vue'
+import { computed } from "vue";
 
 export default {
-  name: 'CustomersTableItem',
-  props: ['customer', 'value', 'selected'],
+  name: "CustomersTableItem",
+  props: ["customer", "value", "selected"],
   setup(props, context) {
-    const checked = computed(() => props.selected.includes(props.value))
+    const checked = computed(() => props.selected.includes(props.value));
 
     function check() {
-      let updatedSelected = [...props.selected]
-      if (this.checked) {
-        updatedSelected.splice(updatedSelected.indexOf(props.value), 1)
+      let updatedSelected = [...props.selected];
+      if (checked) {
+        updatedSelected.splice(updatedSelected.indexOf(props.value), 1);
       } else {
-        updatedSelected.push(props.value)
+        updatedSelected.push(props.value);
       }
-      context.emit('update:selected', updatedSelected)
+      context.emit("update:selected", updatedSelected);
     }
 
     return {
       check,
       checked,
-    }
+    };
   },
-}
+};
 </script>
