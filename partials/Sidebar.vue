@@ -21,26 +21,30 @@
       id="sidebar"
       ref="sidebar"
       class="
-        flex flex-col
-        absolute
-        z-50
-        left-0
-        top-0
-        lg:static lg:left-auto lg:top-auto lg:translate-x-0
-        min-h-screen
-        h-fit
-        overflow-y-scroll
-        lg:overflow-y-auto
-        no-scrollbar
-        w-64
-        lg:w-20 lg:sidebar-expanded:!w-64
         2xl:!w-64
-        shrink-0
+        absolute
         bg-slate-800
-        p-4
-        transition-all
         duration-200
         ease-in-out
+        flex flex-col
+        h-fit
+        left-0
+        lg:overflow-y-auto
+        lg:static
+        lg:left-auto
+        lg:top-auto
+        lg:translate-x-0
+        lg:w-20
+        lg:sidebar-expanded:!w-64
+        min-h-screen
+        no-scrollbar
+        overflow-y-scroll
+        p-4
+        shrink-0
+        top-0
+        transition-all
+        w-64
+        z-50
       "
       :class="sidebarOpen ? 'translate-x-0' : '-translate-x-64'"
     >

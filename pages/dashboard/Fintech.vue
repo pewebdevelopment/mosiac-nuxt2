@@ -1,8 +1,12 @@
 <template>
   <div class="flex h-screen overflow-hidden relative">
     <!-- Sidebar -->
-    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
-
+    <diiv class="w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64">
+      <Sidebar
+        :sidebarOpen="sidebarOpen"
+        @close-sidebar="sidebarOpen = false"
+      />
+    </diiv>
     <!-- Content area -->
     <div
       class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden"

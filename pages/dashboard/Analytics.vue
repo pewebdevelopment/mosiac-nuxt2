@@ -1,8 +1,12 @@
 <template>
   <div class="flex h-screen overflow-hidden">
-    <!-- Sidebar -->
-    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
-
+    <div class="w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64">
+      <!-- Sidebar -->
+      <Sidebar
+        :sidebarOpen="sidebarOpen"
+        @close-sidebar="sidebarOpen = false"
+      />
+    </div>
     <!-- Content area -->
     <div
       id="content-area"
