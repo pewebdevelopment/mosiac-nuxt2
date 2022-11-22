@@ -6,7 +6,7 @@
         <div class="flex">
           <!-- Hamburger button -->
           <button
-            class="text-slate-500 hover:text-slate-600 lg:hidden"
+            class="text-slate-500 hover:text-slate-600"
             @click.stop="$emit('toggle-sidebar')"
             aria-controls="sidebar"
             :aria-expanded="sidebarOpen"
