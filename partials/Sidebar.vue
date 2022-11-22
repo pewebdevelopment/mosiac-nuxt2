@@ -214,7 +214,7 @@
               </a>
               <div
                 id="tryingtofind"
-                class="lg:hidden lg:sidebar-expanded:block 2xl:block"
+                class="lg:sidebar-expanded:block 2xl:block"
               >
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
@@ -393,7 +393,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/ecommerce/customers"
@@ -787,7 +787,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/community/userstabs"
@@ -1125,7 +1125,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/finance/CreditCards"
@@ -1303,7 +1303,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/job/JobListing"
@@ -1481,7 +1481,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/tasks/TasksKanban"
@@ -1859,7 +1859,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/settings/Account"
@@ -2149,7 +2149,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/utility/changelog"
@@ -2422,7 +2422,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link to="/signin" custom v-slot="{ href, navigate }">
                     <li class="mb-1 last:mb-0">
@@ -2567,7 +2567,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/Onboarding01"
@@ -2769,7 +2769,7 @@
                   </div>
                 </div>
               </a>
-              <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
+              <div class="lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
                   <nuxt-link
                     to="/component/ButtonPage"
