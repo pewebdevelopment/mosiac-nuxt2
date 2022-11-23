@@ -199,15 +199,7 @@
               <h2 class="text-xl leading-snug text-slate-800 font-bold mb-5">
                 Digital Goods
               </h2>
-              <div
-                class="
-                  grid grid-cols-1
-                  sm:grid-cols-2
-                  md:grid-cols-3
-                  lg:grid-cols-4
-                  gap-6
-                "
-              >
+              <div class="">
                 <ShopCards02 />
               </div>
             </div>
