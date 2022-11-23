@@ -1,4 +1,4 @@
-# Vue3RFsinNuxt2
+# Mosiac-Nuxt
 
 ## Build Setup
 
