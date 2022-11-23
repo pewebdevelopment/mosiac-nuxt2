@@ -189,7 +189,7 @@
               <h2 class="text-xl leading-snug text-slate-800 font-bold mb-5">
                 Video Courses
               </h2>
-              <div class="grid grid-cols-12 gap-6">
+              <div class="">
                 <ShopCards01 />
               </div>
             </div>
@@ -199,7 +199,15 @@
               <h2 class="text-xl leading-snug text-slate-800 font-bold mb-5">
                 Digital Goods
               </h2>
-              <div class="grid grid-cols-12 gap-6">
+              <div
+                class="
+                  grid grid-cols-1
+                  sm:grid-cols-2
+                  md:grid-cols-3
+                  lg:grid-cols-4
+                  gap-6
+                "
+              >
                 <ShopCards02 />
               </div>
             </div>
@@ -209,7 +217,7 @@
               <h2 class="text-xl leading-snug text-slate-800 font-bold mb-5">
                 Online Events
               </h2>
-              <div class="grid grid-cols-12 gap-6">
+              <div class="">
                 <ShopCards03 />
               </div>
             </div>
@@ -219,7 +227,7 @@
               <h2 class="text-xl leading-snug text-slate-800 font-bold mb-5">
                 Crowdfunding
               </h2>
-              <div class="grid grid-cols-12 gap-6">
+              <div class="">
                 <ShopCards04 />
               </div>
             </div>
@@ -229,7 +237,7 @@
               <h2 class="text-xl leading-snug text-slate-800 font-bold mb-5">
                 Popular Categories
               </h2>
-              <div class="grid grid-cols-12 gap-6">
+              <div class="">
                 <ShopCards05 />
               </div>
             </div>
@@ -239,7 +247,7 @@
               <h2 class="text-xl leading-snug text-slate-800 font-bold mb-5">
                 Trending Now
               </h2>
-              <div class="grid grid-cols-12 gap-6">
+              <div class="">
                 <ShopCards06 />
               </div>
             </div>

@@ -150,7 +150,7 @@
           </div>
 
           <!-- Cards -->
-          <div class="grid grid-cols-12 gap-x-4 gap-y-8">
+          <div class="grid grid-cols-4 gap-x-4 gap-y-8">
             <!-- Tasks column -->
             <TasksGroups title="To Do’s 🖋️">
               <Task01 />
