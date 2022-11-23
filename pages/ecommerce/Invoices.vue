@@ -43,6 +43,7 @@
             justify-start
             sm:justify-end
             gap-2
+            px-10
           "
         >
           <!-- Search form -->
@@ -62,7 +63,7 @@
         </div>
 
         <!-- More actions -->
-        <div class="sm:flex sm:justify-between sm:items-center mb-5">
+        <div class="sm:flex sm:justify-between sm:items-center my-5 px-10">
           <!-- Left side -->
           <div class="mb-4 sm:mb-0">
             <ul class="flex flex-wrap -m-1">

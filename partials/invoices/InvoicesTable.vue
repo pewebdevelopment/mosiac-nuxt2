@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-white shadow-lg rounded-sm border border-slate-200 relative">
+  <div
+    class="bg-white shadow-lg rounded-sm border border-slate-200 relative px-8"
+  >
     <header class="px-5 py-4">
       <h2 class="font-semibold text-slate-800">
         Invoices <span class="text-slate-400 font-medium">67</span>
