@@ -100,7 +100,7 @@
 
       <!-- Connected Apps cards -->
       <section class="pb-6 border-b border-slate-200">
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card 1 -->
           <div
             class="
@@ -739,7 +739,7 @@
         <h3 class="text-xl leading-snug text-slate-800 font-bold mt-6 mb-5">
           Trending Categories
         </h3>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
           <!-- Card 1 -->
           <div
             class="
