@@ -9,6 +9,7 @@
       shadow-lg
       rounded-sm
       border border-slate-200
+      m-0
     "
   >
     <div class="px-5 pt-5">
