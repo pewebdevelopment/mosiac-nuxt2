@@ -1,4 +1,4 @@
-# Mosiac-Nuxt
+# Mosiac-Nuxt2
 
 ## Build Setup
 
