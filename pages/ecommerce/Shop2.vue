@@ -1,52 +1,174 @@
 <template>
   <div class="flex h-screen overflow-hidden">
-
-    <!-- Sidebar -->
-    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
+    <!-- Sidebar Wrapper -->
+    <div
+      id="sidebar-wrapper"
+      class="w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64"
+    >
+      <!-- Sidebar -->
+      <Sidebar
+        :sidebarOpen="sidebarOpen"
+        @close-sidebar="sidebarOpen = false"
+      />
+    </div>
 
     <!-- Content area -->
-    <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
-      
+    <div
+      class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden"
+    >
       <!-- Site header -->
-      <Header :sidebarOpen="sidebarOpen" @toggle-sidebar="sidebarOpen = !sidebarOpen" />
+      <Header
+        :sidebarOpen="sidebarOpen"
+        @toggle-sidebar="sidebarOpen = !sidebarOpen"
+      />
 
       <main>
         <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
-
           <!-- Page header -->
           <div class="mb-5">
-
             <!-- Title -->
-            <h1 class="text-2xl md:text-3xl text-slate-800 font-bold">Find the right product for you ✨</h1>
-
+            <h1 class="text-2xl md:text-3xl text-slate-800 font-bold">
+              Find the right product for you ✨
+            </h1>
           </div>
 
           <!-- Page content -->
-          <div class="flex flex-col space-y-10 sm:flex-row sm:space-x-6 sm:space-y-0 md:flex-col md:space-x-0 md:space-y-10 xl:flex-row xl:space-x-6 xl:space-y-0 mt-9">
-
+          <div
+            class="
+              flex flex-col
+              space-y-10
+              sm:flex-row sm:space-x-6 sm:space-y-0
+              md:flex-col md:space-x-0 md:space-y-10
+              xl:flex-row xl:space-x-6 xl:space-y-0
+              mt-9
+            "
+          >
             <!-- Sidebar -->
             <ShopSidebar />
 
             <!-- Content -->
             <div>
-
               <!-- Filters -->
               <div class="mb-5">
                 <ul class="flex flex-wrap -m-1">
                   <li class="m-1">
-                    <button class="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-transparent shadow-sm bg-indigo-500 text-white duration-150 ease-in-out">View All</button>
+                    <button
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        text-sm
+                        font-medium
+                        leading-5
+                        rounded-full
+                        px-3
+                        py-1
+                        border border-transparent
+                        shadow-sm
+                        bg-indigo-500
+                        text-white
+                        duration-150
+                        ease-in-out
+                      "
+                    >
+                      View All
+                    </button>
                   </li>
                   <li class="m-1">
-                    <button class="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-slate-200 hover:border-slate-300 shadow-sm bg-white text-slate-500 duration-150 ease-in-out">Featured</button>
+                    <button
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        text-sm
+                        font-medium
+                        leading-5
+                        rounded-full
+                        px-3
+                        py-1
+                        border border-slate-200
+                        hover:border-slate-300
+                        shadow-sm
+                        bg-white
+                        text-slate-500
+                        duration-150
+                        ease-in-out
+                      "
+                    >
+                      Featured
+                    </button>
                   </li>
                   <li class="m-1">
-                    <button class="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-slate-200 hover:border-slate-300 shadow-sm bg-white text-slate-500 duration-150 ease-in-out">Newest</button>
+                    <button
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        text-sm
+                        font-medium
+                        leading-5
+                        rounded-full
+                        px-3
+                        py-1
+                        border border-slate-200
+                        hover:border-slate-300
+                        shadow-sm
+                        bg-white
+                        text-slate-500
+                        duration-150
+                        ease-in-out
+                      "
+                    >
+                      Newest
+                    </button>
                   </li>
                   <li class="m-1">
-                    <button class="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-slate-200 hover:border-slate-300 shadow-sm bg-white text-slate-500 duration-150 ease-in-out">Price - Low To High</button>
+                    <button
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        text-sm
+                        font-medium
+                        leading-5
+                        rounded-full
+                        px-3
+                        py-1
+                        border border-slate-200
+                        hover:border-slate-300
+                        shadow-sm
+                        bg-white
+                        text-slate-500
+                        duration-150
+                        ease-in-out
+                      "
+                    >
+                      Price - Low To High
+                    </button>
                   </li>
                   <li class="m-1">
-                    <button class="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-slate-200 hover:border-slate-300 shadow-sm bg-white text-slate-500 duration-150 ease-in-out">Price - High to Low</button>
+                    <button
+                      class="
+                        inline-flex
+                        items-center
+                        justify-center
+                        text-sm
+                        font-medium
+                        leading-5
+                        rounded-full
+                        px-3
+                        py-1
+                        border border-slate-200
+                        hover:border-slate-300
+                        shadow-sm
+                        bg-white
+                        text-slate-500
+                        duration-150
+                        ease-in-out
+                      "
+                    >
+                      Price - High to Low
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -64,43 +186,37 @@
               <div class="mt-6">
                 <PaginationClassic />
               </div>
-
             </div>
-
           </div>
-
-        </div>        
+        </div>
       </main>
-
-    </div> 
-
+    </div>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
-import Sidebar from '../../partials/Sidebar.vue'
-import Header from '../../partials/Header.vue'
-import ShopSidebar from '../../partials/ecommerce/ShopSidebar.vue'
-import ShopCards07 from '../../partials/ecommerce/ShopCards07.vue'
-import PaginationClassic from '../../components/PaginationClassic.vue'
+import { ref } from "vue";
+import Sidebar from "../../partials/Sidebar.vue";
+import Header from "../../partials/Header.vue";
+import ShopSidebar from "../../partials/ecommerce/ShopSidebar.vue";
+import ShopCards07 from "../../partials/ecommerce/ShopCards07.vue";
+import PaginationClassic from "../../components/PaginationClassic.vue";
 
 export default {
-  name: 'Shop2',
+  name: "Shop2",
   components: {
     Sidebar,
     Header,
     ShopSidebar,
-    ShopCards07,    
+    ShopCards07,
     PaginationClassic,
   },
   setup() {
-
-    const sidebarOpen = ref(false)
+    const sidebarOpen = ref(false);
 
     return {
       sidebarOpen,
-    }  
-  }
-}
+    };
+  },
+};
 </script>

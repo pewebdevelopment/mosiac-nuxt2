@@ -1,21 +1,39 @@
 <template>
   <div class="flex h-screen overflow-hidden">
-
-    <!-- Sidebar -->
-    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
+    <!-- Sidebar Wrapper -->
+    <div
+      id="sidebar-wrapper"
+      class="w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64"
+    >
+      <!-- Sidebar -->
+      <Sidebar
+        :sidebarOpen="sidebarOpen"
+        @close-sidebar="sidebarOpen = false"
+      />
+    </div>
 
     <!-- Content area -->
-    <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
-      
+    <div
+      class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden"
+    >
       <!-- Site header -->
-      <Header :sidebarOpen="sidebarOpen" @toggle-sidebar="sidebarOpen = !sidebarOpen" />
+      <Header
+        :sidebarOpen="sidebarOpen"
+        @toggle-sidebar="sidebarOpen = !sidebarOpen"
+      />
 
       <main>
         <div class="px-4 sm:px-6 lg:px-8 py-8 w-full">
-
           <!-- Page content -->
-          <div class="max-w-5xl mx-auto flex flex-col lg:flex-row lg:space-x-8 xl:space-x-16">
-
+          <div
+            class="
+              max-w-5xl
+              mx-auto
+              flex flex-col
+              lg:flex-row lg:space-x-8
+              xl:space-x-16
+            "
+          >
             <!-- Cart items -->
             <div class="mb-6 lg:mb-0">
               <div class="mb-3">
@@ -29,33 +47,82 @@
               </div>
               <header class="mb-2">
                 <!-- Title -->
-                <h1 class="text-2xl md:text-3xl text-slate-800 font-bold">Shopping Cart (3) ✨</h1>
+                <h1 class="text-2xl md:text-3xl text-slate-800 font-bold">
+                  Shopping Cart (3) ✨
+                </h1>
               </header>
 
               <!-- Cart items -->
               <CartItems />
-
             </div>
 
             <!-- Sidebar -->
             <div>
-              <div class="bg-white p-5 shadow-lg rounded-sm border border-slate-200 lg:w-72 xl:w-80">
-                <div class="text-slate-800 font-semibold mb-2">Order Summary</div>
+              <div
+                class="
+                  bg-white
+                  p-5
+                  shadow-lg
+                  rounded-sm
+                  border border-slate-200
+                  lg:w-72
+                  xl:w-80
+                "
+              >
+                <div class="text-slate-800 font-semibold mb-2">
+                  Order Summary
+                </div>
                 <!-- Order details -->
                 <ul class="mb-4">
-                  <li class="text-sm w-full flex justify-between py-3 border-b border-slate-200">
+                  <li
+                    class="
+                      text-sm
+                      w-full
+                      flex
+                      justify-between
+                      py-3
+                      border-b border-slate-200
+                    "
+                  >
                     <div>Products & Subscriptions</div>
                     <div class="font-medium text-slate-800">$205</div>
                   </li>
-                  <li class="text-sm w-full flex justify-between py-3 border-b border-slate-200">
+                  <li
+                    class="
+                      text-sm
+                      w-full
+                      flex
+                      justify-between
+                      py-3
+                      border-b border-slate-200
+                    "
+                  >
                     <div>Shipping</div>
                     <div class="font-medium text-slate-800">-</div>
                   </li>
-                  <li class="text-sm w-full flex justify-between py-3 border-b border-slate-200">
+                  <li
+                    class="
+                      text-sm
+                      w-full
+                      flex
+                      justify-between
+                      py-3
+                      border-b border-slate-200
+                    "
+                  >
                     <div>Taxes</div>
                     <div class="font-medium text-slate-800">$48</div>
                   </li>
-                  <li class="text-sm w-full flex justify-between py-3 border-b border-slate-200">
+                  <li
+                    class="
+                      text-sm
+                      w-full
+                      flex
+                      justify-between
+                      py-3
+                      border-b border-slate-200
+                    "
+                  >
                     <div>Total due (including taxes)</div>
                     <div class="font-medium text-emerald-600">$253</div>
                   </li>
@@ -63,49 +130,81 @@
                 <!-- Promo box -->
                 <div class="mb-6">
                   <div class="flex items-center justify-between">
-                    <label class="block text-sm font-medium mb-1" for="promo">Promo Code</label>
+                    <label class="block text-sm font-medium mb-1" for="promo"
+                      >Promo Code</label
+                    >
                     <div class="text-sm text-slate-400 italic">optional</div>
                   </div>
-                  <input id="promo" class="form-input w-full mb-2" type="text" />
-                  <button class="btn w-full bg-indigo-500 hover:bg-indigo-600 text-white disabled:border-slate-200 disabled:bg-slate-100 disabled:text-slate-400 disabled:cursor-not-allowed shadow-none" disabled>Apply Code</button>
+                  <input
+                    id="promo"
+                    class="form-input w-full mb-2"
+                    type="text"
+                  />
+                  <button
+                    class="
+                      btn
+                      w-full
+                      bg-indigo-500
+                      hover:bg-indigo-600
+                      text-white
+                      disabled:border-slate-200
+                      disabled:bg-slate-100
+                      disabled:text-slate-400
+                      disabled:cursor-not-allowed
+                      shadow-none
+                    "
+                    disabled
+                  >
+                    Apply Code
+                  </button>
                 </div>
                 <div class="mb-4">
-                  <button class="btn w-full bg-indigo-500 hover:bg-indigo-600 text-white" href="#0">Buy Now - $253.00</button>
+                  <button
+                    class="
+                      btn
+                      w-full
+                      bg-indigo-500
+                      hover:bg-indigo-600
+                      text-white
+                    "
+                    href="#0"
+                  >
+                    Buy Now - $253.00
+                  </button>
                 </div>
-                <div class="text-xs text-slate-500 italic text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <a class="underline hover:no-underline" href="#0">Terms</a>.</div>
+                <div class="text-xs text-slate-500 italic text-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                  <a class="underline hover:no-underline" href="#0">Terms</a>.
+                </div>
               </div>
             </div>
-
           </div>
-
-        </div>        
+        </div>
       </main>
-
-    </div> 
-
+    </div>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
-import Sidebar from '../../partials/Sidebar.vue'
-import Header from '../../partials/Header.vue'
-import CartItems from '../../partials/ecommerce/CartItems.vue'
+import { ref } from "vue";
+import Sidebar from "../../partials/Sidebar.vue";
+import Header from "../../partials/Header.vue";
+import CartItems from "../../partials/ecommerce/CartItems.vue";
 
 export default {
-  name: 'Cart',
+  name: "Cart",
   components: {
     Sidebar,
     Header,
     CartItems,
   },
   setup() {
-
-    const sidebarOpen = ref(false)
+    const sidebarOpen = ref(false);
 
     return {
       sidebarOpen,
-    }  
-  }
-}
+    };
+  },
+};
 </script>
