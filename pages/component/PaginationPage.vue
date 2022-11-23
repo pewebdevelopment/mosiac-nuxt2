@@ -1,32 +1,56 @@
 <template>
   <div class="flex h-screen overflow-hidden">
-
-    <!-- Sidebar -->
-    <Sidebar :sidebarOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
+    <!-- Sidebar Wrapper -->
+    <div
+      id="sidebar-wrapper"
+      class="w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64"
+    >
+      <!-- Sidebar -->
+      <Sidebar
+        :sidebarOpen="sidebarOpen"
+        @close-sidebar="sidebarOpen = false"
+      />
+    </div>
 
     <!-- Content area -->
-    <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-white">
-      
+    <div
+      class="
+        relative
+        flex flex-col flex-1
+        overflow-y-auto overflow-x-hidden
+        bg-white
+      "
+    >
       <!-- Site header -->
-      <Header :sidebarOpen="sidebarOpen" @toggle-sidebar="sidebarOpen = !sidebarOpen" />
+      <Header
+        :sidebarOpen="sidebarOpen"
+        @toggle-sidebar="sidebarOpen = !sidebarOpen"
+      />
 
       <main>
         <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
-
           <!-- Page header -->
           <div class="mb-8">
-            <h1 class="text-2xl md:text-3xl text-slate-800 font-bold">Pagination ✨</h1>
+            <h1 class="text-2xl md:text-3xl text-slate-800 font-bold">
+              Pagination ✨
+            </h1>
           </div>
 
           <div class="border-t border-slate-200">
-
             <!-- Components -->
             <div class="space-y-8 mt-8">
-
               <!-- Option 1 -->
               <div>
                 <h2 class="text-2xl text-slate-800 font-bold mb-6">Option 1</h2>
-                <div class="px-6 py-8 bg-slate-50 border border-slate-200 rounded-sm">
+                <div
+                  class="
+                    px-6
+                    py-8
+                    bg-slate-50
+                    border border-slate-200
+                    rounded-sm
+                  "
+                >
                   <PaginationNumeric />
                 </div>
               </div>
@@ -34,7 +58,15 @@
               <!-- Option 2 -->
               <div>
                 <h2 class="text-2xl text-slate-800 font-bold mb-6">Option 2</h2>
-                <div class="px-6 py-8 bg-slate-50 border border-slate-200 rounded-sm">
+                <div
+                  class="
+                    px-6
+                    py-8
+                    bg-slate-50
+                    border border-slate-200
+                    rounded-sm
+                  "
+                >
                   <PaginationClassic />
                 </div>
               </div>
@@ -42,33 +74,36 @@
               <!-- Option 3 -->
               <div>
                 <h2 class="text-2xl text-slate-800 font-bold mb-6">Option 3</h2>
-                <div class="px-6 py-8 bg-slate-50 border border-slate-200 rounded-sm">
+                <div
+                  class="
+                    px-6
+                    py-8
+                    bg-slate-50
+                    border border-slate-200
+                    rounded-sm
+                  "
+                >
                   <PaginationNumeric2 />
                 </div>
               </div>
-
             </div>
-
           </div>
-
-        </div>        
+        </div>
       </main>
-
-    </div> 
-
+    </div>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
-import Sidebar from '../../partials/Sidebar.vue'
-import Header from '../../partials/Header.vue'
-import PaginationNumeric from '../../components/PaginationNumeric.vue'
-import PaginationClassic from '../../components/PaginationClassic.vue'
-import PaginationNumeric2 from '../../components/PaginationNumeric2.vue'
+import { ref } from "vue";
+import Sidebar from "../../partials/Sidebar.vue";
+import Header from "../../partials/Header.vue";
+import PaginationNumeric from "../../components/PaginationNumeric.vue";
+import PaginationClassic from "../../components/PaginationClassic.vue";
+import PaginationNumeric2 from "../../components/PaginationNumeric2.vue";
 
 export default {
-  name: 'PaginationPage',
+  name: "PaginationPage",
   components: {
     Sidebar,
     Header,
@@ -77,12 +112,11 @@ export default {
     PaginationNumeric2,
   },
   setup() {
-
-    const sidebarOpen = ref(false)
+    const sidebarOpen = ref(false);
 
     return {
       sidebarOpen,
-    }  
-  }
-}
+    };
+  },
+};
 </script>
