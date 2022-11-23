@@ -37,9 +37,9 @@
             class="
               flex flex-col
               space-y-10
-              sm:flex-row sm:space-x-6 sm:space-y-0
-              md:flex-col md:space-x-0 md:space-y-10
-              xl:flex-row xl:space-x-6 xl:space-y-0
+              sm:flex-row sm:space-x-6 sm:space-y-2
+              md:flex-col md:space-x-2 md:space-y-10
+              xl:flex-row xl:space-x-6 xl:space-y-2
               mt-9
             "
           >
@@ -47,7 +47,7 @@
             <ShopSidebar />
 
             <!-- Content -->
-            <div>
+            <div id="ShopContent">
               <!-- Filters -->
               <div class="mb-5">
                 <ul class="flex flex-wrap -m-1">
@@ -177,15 +177,7 @@
 
               <!-- Cards 1 (Video Courses) -->
               <div>
-                <div
-                  class="
-                    grid grid-cols-1
-                    sm:grid-cols-2
-                    md:grid-cols-3
-                    lg:grid-cols-4
-                    gap-6
-                  "
-                >
+                <div class="">
                   <ShopCards07 />
                 </div>
               </div>
