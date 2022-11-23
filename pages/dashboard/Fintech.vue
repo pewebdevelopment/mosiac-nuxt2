@@ -57,34 +57,43 @@
           </div>
 
           <!-- Cards -->
-          <div class="grid grid-cols-12 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Page Intro -->
-            <FintechIntro />
+            <FintechIntro class="col-span-3" />
             <!-- Line chart (Portfolio Returns) -->
-            <FintechCard01 />
+            <FintechCard01 class="col-span-2" />
             <!-- Credit Card -->
-            <FintechCard02 />
-            <!-- Bar chart (Cash Flow) -->
-            <FintechCard03 />
-            <!-- Horizontal bar chart (Cash Flow by Account) -->
-            <FintechCard04 />
-            <!-- Table (Recent Expenses) -->
-            <FintechCard05 />
-            <!-- Table (Recent Earnings) -->
-            <FintechCard06 />
+            <FintechCard02 class="col-span-1" />
+            <div class="flex justify-evenly grow col-span-3">
+              <!-- Bar chart (Cash Flow) -->
+              <FintechCard03 class="" />
+              <!-- Horizontal bar chart (Cash Flow by Account) -->
+              <FintechCard04 class="" />
+            </div>
+            <div class="flex justify-evenly grow col-span-3">
+              <!-- Table (Recent Expenses) -->
+              <FintechCard05 />
+              <!-- Table (Recent Earnings) -->
+              <FintechCard06 />
+            </div>
+
             <!-- Line chart (Saving Goals) -->
             <FintechCard07 />
             <!-- Line chart (Growth Portfolio) -->
             <FintechCard08 />
             <!-- Pie chart (Portfolio Value) -->
             <FintechCard09 />
-            <!-- Line charts (Stock graphs) -->
-            <FintechCard10 />
-            <FintechCard11 />
-            <FintechCard12 />
-            <FintechCard13 />
+
+            <div class="flex justify-evenly grow col-span-3">
+              <!-- Line charts (Stock graphs) -->
+              <FintechCard10 />
+              <FintechCard11 />
+              <FintechCard12 />
+              <FintechCard13 />
+            </div>
+
             <!-- Table (Market Trends) -->
-            <FintechCard14 />
+            <FintechCard14 class="col-span-3" />
           </div>
         </div>
       </main>
