@@ -11,7 +11,7 @@
           min-w-60
         "
       >
-        <div class="grid md:grid-cols-2 xl:grid-cols-1 gap-6">
+        <div class="grid grid-cols-1 gap-6">
           <!-- Group 1 -->
           <div>
             <div class="text-sm text-slate-800 font-semibold mb-3">
