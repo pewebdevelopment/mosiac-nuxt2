@@ -28,18 +28,22 @@
       />
 
       <main>
-        <div class="relative flex">
+        <div class="relative grid grid-cols-12">
           <!-- Profile sidebar -->
-          <ProfileSidebar
-            :profileSidebarOpen="profileSidebarOpen"
-            @close-profilesidebar="profileSidebarOpen = false"
-          />
-
-          <!-- Profile body -->
-          <ProfileBody
-            :profileSidebarOpen="profileSidebarOpen"
-            @toggle-profilesidebar="profileSidebarOpen = !profileSidebarOpen"
-          />
+          <div class="col-span-3">
+            <ProfileSidebar
+              id="ProfileSidebar"
+              :profileSidebarOpen="profileSidebarOpen"
+              @close-profilesidebar="profileSidebarOpen = false"
+            />
+          </div>
+          <div class="col-span-9">
+            <!-- Profile body -->
+            <ProfileBody
+              :profileSidebarOpen="profileSidebarOpen"
+              @toggle-profilesidebar="profileSidebarOpen = !profileSidebarOpen"
+            />
+          </div>
         </div>
       </main>
     </div>
